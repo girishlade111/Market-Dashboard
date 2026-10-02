@@ -1,69 +1,65 @@
-# Welcome to your Lovable project
+# Market Dashboard
 
-## Project info
+A modern, interactive market analytics dashboard built with React, Vite, TypeScript, and shadcn/ui. Visualize market data with charts, cards, and a polished responsive UI — everything runs client-side.
 
-**URL**: https://lovable.dev/projects/a8baea9a-97ae-4008-b023-5de63357c0e2
+## Features
 
-## How can I edit this code?
+- Interactive market-data dashboard with rich visualizations
+- Built on React 18 + TypeScript with Vite for fast builds
+- shadcn/ui component library (Radix primitives, Tailwind CSS)
+- Dark/light theme support (next-themes)
+- Data fetching with TanStack React Query
+- Charts, tables, forms, and dashboard widgets
+- Responsive design for desktop and mobile
+- Client-side only — no backend required
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Framework:** React 18 + TypeScript
+- **Build tool:** Vite
+- **UI:** shadcn/ui (Radix UI), Tailwind CSS
+- **State/Data:** TanStack React Query
+- **Icons:** Lucide React
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a8baea9a-97ae-4008-b023-5de63357c0e2) and start prompting.
+## Quick Start
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open the dev URL shown in the terminal in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Build
 
-**Use GitHub Codespaces**
+```bash
+npm run build        # outputs to dist/
+npm run preview      # preview the production build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+├── src/
+│   ├── components/   # UI components (shadcn/ui based)
+│   ├── pages/        # Page-level views
+│   ├── hooks/        # Custom React hooks
+│   ├── utils/        # Helper functions
+│   ├── App.tsx       # App entry
+│   └── main.tsx      # Vite entry
+├── public/           # Static assets
+├── index.html        # HTML entry
+└── vite.config.ts    # Vite config
+```
 
-This project is built with .
+## Environment Variables
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+None — the app runs fully client-side.
 
-## How can I deploy this project?
+## Deploy
 
-Simply open [Lovable](https://lovable.dev/projects/a8baea9a-97ae-4008-b023-5de63357c0e2) and click on Share -> Publish.
+This is a static Vite build. Deploy the `dist/` folder to any static host (Cloudflare Pages, Netlify, Vercel, GitHub Pages).
 
-## I want to use a custom domain - is that possible?
+---
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Built by Girish Lade — https://ladestack.in
